@@ -6,9 +6,8 @@
 
 // currently, type of js file is set to 'module'
 
-export const backendURL = process.env.backendURL;
-export const latest_news_url = process.env.REACT_APP_LATEST_NEWS_URL;
-export const news_search_url = process.env.REACT_APP_NEWS_SEARCH_URL;
+// export const backendURL = process.env.backendURL;
+export const news_api_url = process.env.REACT_APP_NEWS_API_URL;
 
 
 // Parameters:
