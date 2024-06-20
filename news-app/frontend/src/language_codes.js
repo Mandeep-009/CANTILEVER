@@ -1,4 +1,5 @@
-export const langArr = [{language:'Afrikaans', language_code:	'af'},
+export const langArr = [{language:'---SELECT---', language_code:	''},
+{language:'Afrikaans', language_code:	'af'},
 {language:'Albanian', language_code:	'sq'},
 {language:'Amharic', language_code:	'am'},
 {language:'Arabic', language_code:	'ar'},

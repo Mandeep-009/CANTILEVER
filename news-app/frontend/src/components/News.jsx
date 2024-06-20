@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
-import { news_api_url } from '../config';
 
-function News() {
+function News({url}) {
     const [data,setData] = useState([]);
     const [loaded,setLoaded] = useState(false);
-
+  
     useEffect(()=>{
-      // if all search filters are empty,
-      const url = `${news_api_url}&language=en&category=world`;
       setLoaded(false);
       fetch(url)
         .then((res)=>{
@@ -20,7 +17,7 @@ function News() {
         .catch((err)=>{
           console.log('an error occured: ', err);
         })
-    },[])
+    },[url])
   return (
     <div>
       {
@@ -31,8 +28,8 @@ function News() {
                 content = key.description.substring(0,195).concat("...")
               }
             return (
-              <div>
-              <h2 id={index}>{key.title}</h2>
+              <div key={index}>
+              <h2>{key.title}</h2>
               <p>{content}</p>
               <a href={key.link} target='_blank'>Link to the article</a>
               <h4>{key.pubDate}</h4>

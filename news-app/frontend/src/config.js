@@ -4,8 +4,6 @@
 // console.log(arr[0].name)
 // console.log(langArr[0].language)
 
-// currently, type of js file is set to 'module'
-
 // export const backendURL = process.env.backendURL;
 export const news_api_url = process.env.REACT_APP_NEWS_API_URL;
 
@@ -19,5 +17,5 @@ export const news_api_url = process.env.REACT_APP_NEWS_API_URL;
 // 6. language- upto 5
 // 7. from_date and to_date in format YYYY-MM-DD
 
-export const categories = ['business','crime','domestic','education','entertainment','environment','food','health','lifestyle','other','politics','science','sports','technology','top','tourism','world'];
+export const categories = ['---SELECT---','business','crime','domestic','education','entertainment','environment','food','health','lifestyle','other','politics','science','sports','technology','top','tourism','world'];
 
