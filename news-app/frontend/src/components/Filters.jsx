@@ -22,9 +22,9 @@ const Filters = (props) => {
           <div>OR</div>
           <input className='inp' type="text" onChange={(e)=>setQ(e.target.value)} placeholder='query(in content)' />
         </div>
-        <div>
+        <div style={{display:'flex',justifyContent: 'space-between', margin: '10px'}}>
           <label htmlFor="country">Country: </label>
-          <select id="country" onChange={(e)=>setCountry(e.target.value)} name="country">
+          <select id="country" style={{width: '100px'}} onChange={(e)=>setCountry(e.target.value)} name="country">
               {
                 countryArr.map((key,index)=>{
                     const country_code = key['alpha-2'].toLowerCase();
@@ -35,9 +35,10 @@ const Filters = (props) => {
               }
           </select>
         </div>
-        <div>
+        {/* <div style={{height: '20px'}}></div> */}
+        <div style={{display:'flex',justifyContent: 'space-between', margin: '10px'}}>
           <label htmlFor="category">Category: </label>
-          <select id="category" onChange={(e)=>setCategory(e.target.value)} name="category">
+          <select id="category" style={{width: '100px'}} onChange={(e)=>setCategory(e.target.value)} name="category">
               {
                 categories.map((key,index)=>{
                   return (
@@ -47,9 +48,9 @@ const Filters = (props) => {
               }
           </select>
         </div>
-        <div>
+        <div style={{display:'flex',justifyContent: 'space-between', margin: '10px'}}>
           <label htmlFor="language">Language: </label>
-          <select id="language" onChange={(e)=>setLanguage(e.target.value)} name="language">
+          <select id="language" style={{width: '100px'}} onChange={(e)=>setLanguage(e.target.value)} name="language">
               {
                 langArr.map((key,index)=>{
                   return (
